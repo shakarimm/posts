@@ -60,6 +60,7 @@ import axios from 'axios'
           this.isPostsLoading = true;
           const response = await axios.get('https://jsonplaceholder.typicode.com/posts?_limit=10')
           this.posts = response.data
+          console.log(this.posts)
         } catch (e) {
           alert('Error')
         } finally {
@@ -78,7 +79,6 @@ import axios from 'axios'
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 #app{
   font-family: 'Nunito', sans-serif;
@@ -95,6 +95,10 @@ import axios from 'axios'
 /*  flex-wrap: wrap;*/
 /*  margin-top: -20px;*/
 /*}*/
+.wrapper{
+  position: relative;
+  z-index: 100;
+}
 .title{
   width: 100%;
   font-size: 32px;

@@ -67,6 +67,7 @@ export default {
 }
 .formActive{
   opacity: 1;
+  z-index: 200;
 }
 .input{
   width: 100%;
